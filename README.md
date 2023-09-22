@@ -1,10 +1,18 @@
-#### Dependencies:
+# Homebrew Navigator
+
+### Download
+
+[![GitHub latest release version](https://img.shields.io/github/v/release/danielesteban/navigator.svg?style=flat)](https://navigator.gatunes.com)
+
+### Development
+
+##### Dependencies
 
  * [Build Tools for Visual Studio 2022](https://aka.ms/vs/17/release/vs_BuildTools.exe)
  * [CMake](https://cmake.org/download)
  * [Conan](https://conan.io/downloads)
 
-#### Build:
+##### Build
 
 ```bash
 # clone repo:
