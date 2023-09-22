@@ -2,6 +2,7 @@
   import SvelteMarkdown from 'svelte-markdown';
   import code from './code.svelte';
   import source from '../../../doc.md';
+
   const renderers = { code };
 </script>
 

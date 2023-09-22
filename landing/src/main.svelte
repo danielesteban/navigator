@@ -1,8 +1,13 @@
 <script lang="ts">
+  import HighlightStyle from 'svelte-highlight/styles/github-dark';
   import Discord from './components/discord.svelte';
   import Doc from './components/doc.svelte';
   import Navigator from './components/navigator.svelte';
 </script>
+
+<svelte:head>
+  {@html HighlightStyle}
+</svelte:head>
 
 <Discord />
 

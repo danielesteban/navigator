@@ -6,6 +6,7 @@ import copy from 'rollup-plugin-copy';
 import html from '@rollup/plugin-html';
 import livereload from 'rollup-plugin-livereload';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { parse } from 'semver';
 import postcss from 'rollup-plugin-postcss';
 import replace from '@rollup/plugin-replace';
 import serve from 'rollup-plugin-serve';
@@ -18,7 +19,7 @@ import typescript from '@rollup/plugin-typescript';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outputPath = path.resolve(__dirname, 'build');
 const production = !process.env.ROLLUP_WATCH;
-const version = process.env.VERSION || '0.0.1';
+const version = parse(process.env.VERSION)?.version || '0.0.1';
 
 export default {
   input: path.join(__dirname, 'src', 'main.ts'),
