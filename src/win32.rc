@@ -1,0 +1,44 @@
+#include "winver.h"
+
+#ifndef IDI_ICON1
+#define IDI_ICON1 1
+#endif
+
+#define NAME "Homebrew Navigator"
+#define DESCRIPTION NAME " - 3D Internet"
+#define COPYRIGHT "dani@gatunes (C) 2023"
+
+#define EXE "navigator.exe"
+#define ICO "icon.ico"
+
+IDI_ICON1 ICON DISCARDABLE ICO
+GLFW_ICON ICON DISCARDABLE ICO
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VERNUM1,VERNUM2,VERNUM3,VERNUM4
+PRODUCTVERSION VERNUM1,VERNUM2,VERNUM3,VERNUM4
+FILEFLAGS 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+FILESUBTYPE VFT2_UNKNOWN
+
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "FileDescription", DESCRIPTION
+      VALUE "FileVersion", VERSION
+      VALUE "InternalName", NAME
+      VALUE "LegalCopyright", COPYRIGHT
+      VALUE "OriginalFilename", EXE
+      VALUE "ProductName", NAME
+      VALUE "ProductVersion", "v" VERSION
+    END
+  END
+
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
